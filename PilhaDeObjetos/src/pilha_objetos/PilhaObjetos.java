@@ -87,11 +87,13 @@ public class PilhaObjetos {
     	  	}else {
     	  		System.out.println("Elemento não encontrado na Lista");
     	  	}
-    	  	  
- 
-    		  
-    	  	
+    	  	    	
     	
+    }
+    
+    
+    public String primeiroElemento () {
+    	return quantidadeDisponivel[0];
     }
 
 	
