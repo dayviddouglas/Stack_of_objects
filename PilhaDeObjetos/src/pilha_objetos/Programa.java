@@ -29,8 +29,11 @@ public class Programa {
 		        		pilha.listarElementos();
 	        		System.out.println("Deseja inserir algum elemento 1ª posição?");
 	        		String elementoEscolhido = input.nextLine();
+	        		
 		        		
 		        		pilha.ColocarNoInicio(elementoEscolhido);
+		        		
+		        		
 		        		
 	        	   }catch (PilhaVaziaException ex) {
 		        		   ex.getMessage();
@@ -44,7 +47,9 @@ public class Programa {
 		         	  input.nextLine();
 		    	      
 			    	     if (confirmacaoInserir == 0) {
+			    	    	 System.out.println("Esse é o primeiro elemento da lista:" + pilha.primeiroElemento());
 			    	    	 System.out.println("A sua lista:");
+			    	    	 
 				    	    	  pilha.listarElementos();
 				    	    	 break;
 			    	     }else {
@@ -58,6 +63,7 @@ public class Programa {
 						break;
 					}
 			    	     }
+			    	     
 
 				default:
 					break;
